@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "60dd",
+      "title": "Submit AIML Report",
+      "body": "Submission of Project review of Forest Fire Detection using Deep Learning",
+      "author": "yoshi",
+      "deadline": "2024-06-05T19:57"
+    },
+    {
+      "id": "b731",
+      "title": "Implement Login Page",
+      "body": "Create a login page with username and password fields. Implement form validation and authentication logic.",
+      "author": "mario",
+      "deadline": "2024-06-05T21:42"
+    },
+    {
+      "id": "98f9",
+      "title": "Design Landing Page UI",
+      "body": "Design a modern and user-friendly landing page UI with eye-catching visuals and smooth transitions",
+      "author": "mario",
+      "deadline": "2024-06-13T21:42"
+    },
+    {
+      "id": "7cf6",
+      "title": "New To do List Blog",
+      "body": "U can add your tasks you want to do ",
+      "author": "mario",
+      "deadline": "2024-06-03T21:43"
+    }
+  ]
+}
