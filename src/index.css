@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --navbar-bg: #343a40;
+  --navbar-text: #f8f9fa;
+  --card-bg: #ffffff;
+  --border-color: #ced4da;
+  --button-bg: #007bff;
+  --button-hover-bg: #0056b3;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+
+  --dark-primary-color: #66fcf1;
+  --dark-secondary-color: #45a29e;
+  --dark-background-color: #1f2833;
+  --dark-text-color: #c5c6c7;
+  --dark-navbar-bg: #0b0c10;
+  --dark-navbar-text: #66fcf1;
+  --dark-card-bg: #0b0c10;
+  --dark-border-color: #c5c6c7;
+  --dark-button-bg: #66fcf1;
+  --dark-button-hover-bg: #45a29e;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.navbar h1 {
+  color: var(--navbar-text);
+  font-size: 24px;
+}
+
+.navbar .links a {
+  color: var(--navbar-text);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .links a:hover {
+  color: var(--primary-color);
+}
+
+.navbar .toggle-mode {
+  background: none;
+  border: none;
+  color: var(--navbar-text);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.navbar .toggle-mode:hover {
+  color: var(--primary-color);
+}
+
+/* Content container */
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px var(--box-shadow);
+  border-radius: 8px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Blog previews / list */
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-preview {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--box-shadow);
+  flex: 1 1 calc(33.333% - 20px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px var(--box-shadow);
+}
+
+.blog-preview h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.blog-preview p {
+  color: var(--secondary-color);
+}
+
+.blog-preview a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Blog details page */
+.blog-details {
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.blog-details h2 {
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.blog-details p {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details button {
+  background: var(--button-bg);
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.blog-details button:hover {
+  background: var(--button-hover-bg);
+}
+
+/* Create new blog form */
+.create {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--box-shadow);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.create h2 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.create label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.create input:focus, .create textarea:focus, .create select:focus {
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+  outline: none;
+}
+
+.create button {
+  background: var(--button-bg);
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.create button:hover {
+  background: var(--button-hover-bg);
+}
+
+.dark-mode {
+  --primary-color: var(--dark-primary-color);
+  --secondary-color: var(--dark-secondary-color);
+  --background-color: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+  --navbar-bg: var(--dark-navbar-bg);
+  --navbar-text: var(--dark-navbar-text);
+  --card-bg: var(--dark-card-bg);
+  --border-color: var(--dark-border-color);
+  --button-bg: var(--dark-button-bg);
+  --button-hover-bg: var(--dark-button-hover-bg);
+  --box-shadow: rgba(0, 0, 0, 0.5);
+}
+
